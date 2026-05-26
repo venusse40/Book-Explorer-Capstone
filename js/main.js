@@ -36,7 +36,7 @@ function displayBooks() {
         document.createElement("div");
 
       card.className =
-        "bg-white rounded-2xl shadow-lg overflow-hidden";
+  "bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl shadow-2xl overflow-hidden hover:scale-105 transition duration-300";
 
       const image = book.cover_i
         ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
@@ -64,7 +64,7 @@ function displayBooks() {
             class="favoriteBtn w-full py-3 rounded-xl text-white
             ${
               isFavorite(book.key)
-                ? "bg-red-500"
+                ? "bg-green-500"
                 : "bg-indigo-600"
             }"
           >

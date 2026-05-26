@@ -10,7 +10,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-slate-100">
+<body class="relative min-h-screen text-white overflow-x-hidden">
+    <!-- LIBRARY BACKGROUND -->
+<div
+  class="fixed inset-0 bg-cover bg-center -z-10"
+  style="
+    background-image:
+    linear-gradient(
+      rgba(0,0,0,0.75),
+      rgba(0,0,0,0.75)
+    ),
+    url('https://images.unsplash.com/photo-1507842217343-583bb7270b66');
+  "
+></div>
+    <main class="relative z-10"></main>
+    
 
   <!-- NAVBAR -->
   <nav class="bg-slate-900 text-white p-5 flex justify-between items-center">
@@ -40,10 +54,14 @@
 
 
   <!-- HERO -->
-  <section class="bg-gradient-to-r from-indigo-700 to-purple-700 text-white text-center py-20 px-6">
+  <section class="relative overflow-hidden bg-gradient-to-r from-violet-900 via-violet-800 to-indigo-700 text-white text-center py-24 px-6">
+    <!-- Blur Background -->
+<div class="absolute top-10 left-10 w-72 h-72 bg-violet-500 opacity-30 rounded-full blur-3xl"></div>
 
+<div class="absolute bottom-10 right-10 w-72 h-72 bg-indigo-500 opacity-30 rounded-full blur-3xl"></div>
+<div class="relative z-10"></div>
     <h2 class="text-5xl font-bold mb-6">
-      Discover Amazing Books
+      Explore stories through The World's Greatest Books
     </h2>
 
     <p class="text-xl mb-8">
@@ -62,6 +80,7 @@
       <button
         id="searchBtn"
         class="bg-black px-6 py-4 rounded-xl"
+         class="text-xl font-bold mb-2 text-white"> </h3>
       >
         Search
       </button>
@@ -80,7 +99,7 @@
 
     <div
       id="booksContainer"
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10"
     >
 
     </div>
@@ -111,6 +130,6 @@
   </footer>
 
   <script type="module" src="js/main.js"></script>
-
+</main>
 </body>
 </html>

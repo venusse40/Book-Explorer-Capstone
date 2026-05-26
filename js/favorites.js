@@ -30,7 +30,7 @@ function displayFavorites() {
       document.createElement("div");
 
     card.className =
-      "bg-white rounded-2xl shadow-lg overflow-hidden";
+  "bg-slate-800 rounded-2xl shadow-lg overflow-hidden";
 
     const image = book.cover_i
       ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
@@ -44,12 +44,12 @@ function displayFavorites() {
 
       <div class="p-5">
 
-        <h3 class="text-2xl font-bold mb-4">
+        <h3 class="text-2xl font-bold mb-4 text-white">
           ${book.title}
         </h3>
 
         <button
-          class="removeBtn bg-red-500 text-white w-full py-3 rounded-xl"
+          class="removeBtn bg-gray-500 text-white w-full py-3 rounded-xl"
         >
           Remove
         </button>
