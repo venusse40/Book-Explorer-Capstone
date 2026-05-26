@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Favorites</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+
+  <nav class="bg-slate-900 text-white p-5 flex justify-between items-center">
+
+  <h1 class="text-3xl font-bold">
+    ❤️ Favorites
+  </h1>
+
+  <div class="space-x-6">
+
+    <a href="index.html">
+      Home
+    </a>
+
+    <a href="favorites.html" class="text-indigo-300">
+      Favorites
+    </a>
+
+    <a href="about.html">
+      About
+    </a>
+
+  </div>
+
+</nav>
+
+  <section class="p-10">
+
+    <div
+      id="favoritesContainer"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+    >
+
+    </div>
+
+  </section>
+
+  <script type="module" src="js/favorites.js"></script>
+
+</body>
+</html>
