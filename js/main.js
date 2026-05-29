@@ -27,6 +27,26 @@ let visibleBooks = 8;
 function displayBooks() {
 
   booksContainer.innerHTML = "";
+  if (books.length === 0) {
+
+  booksContainer.innerHTML = `
+    <div class="col-span-full text-center py-20">
+
+      <div class="text-7xl mb-4">📚</div>
+
+      <h2 class="text-4xl font-bold text-red-400 mb-4">
+        Results Not Found
+      </h2>
+
+      <p class="text-slate-300 text-lg">
+        Try searching for another book title.
+      </p>
+
+    </div>
+  `;
+
+  return;
+}
 
   books
     .slice(0, visibleBooks)
